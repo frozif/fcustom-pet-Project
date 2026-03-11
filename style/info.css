@@ -1,0 +1,235 @@
+/* ------------------------------------ */
+/* Основная Информация  про Коффее */
+
+.section_infoMain {
+  margin-top: 170px;
+}
+
+
+.section_infoMain_main {
+      display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.section_infoMain_main_img {
+z-index: 1;
+position: relative;
+    transform: rotate(320deg) scale(0.95);
+    width: 590px;
+    transition: 
+        opacity .4s ease,
+        transform .4s ease;
+}
+
+.imgUnActive{
+    opacity: 0;
+    transform: rotate(330deg) scale(0.9) translateY(20px);
+}
+
+.imgActive{
+    opacity: 1;
+    transform: rotate(320deg) scale(1) translateY(0);
+}
+
+
+.section_infoMain_main_right_title{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 75px;
+line-height: 109%;
+letter-spacing: -0.03em;
+max-width: 450px;
+color: #1f1f1f;
+}
+
+.section_infoMain_main_right_title span{
+  font-size: 80px;
+background: linear-gradient(90deg, #237249 0%, #35c66b 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.section_infoMain_main_right_subtitle{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 163%;
+max-width: 510px;
+letter-spacing: -0.02em;
+margin-top: 40px;
+color: #1f1f1f;
+}
+.section_infoMain_main_left {
+  position: relative;
+      user-select: none;
+}
+.section_infoMain_main_img_Bean {
+top: 54px;
+    left: 181px;
+    position: absolute;
+    transform: rotate(108deg);
+    z-index: -1;
+}
+
+.txtUnActive{
+    opacity: 0;
+    transform: translateY(0);
+}
+.txtActive{
+    opacity: 1;
+    transform: translateY(15px);
+}
+
+
+/* ------------------------------------ */
+
+/* Адаптация  */
+
+@media (max-width: 1120px) {
+
+/* ------------------------------------ */
+/* панель с информацией */
+
+.section_infoMain_main_right_title{
+      font-weight: 700;
+    font-size: 55px;
+    max-width: 400px;
+}
+
+.section_infoMain_main_right_title span{
+      font-size: 60px;
+}
+
+.section_infoMain_main_right_subtitle{
+  font-size: 16px;
+max-width: 400px;
+}
+
+.section_infoMain_main_img{
+  width: 550px;
+}
+
+.section_infoMain_main_img_Bean{
+    left: 134px;
+}
+}
+
+
+@media (max-width: 960px) {
+
+/* ------------------------------------ */
+/* панель с информацией */
+
+.section_infoMain_main_right_title{
+    font-size: 45px;
+    max-width: 350px;
+}
+
+.section_infoMain_main_right_title span{
+      font-size: 50px;
+}
+
+.section_infoMain_main_right_subtitle{
+  font-size: 14px;
+max-width: 350px;
+}
+
+.section_infoMain_main_img{
+  width: 450px;
+}
+
+.section_infoMain_main_img_Bean{
+top: 24px;
+left: 1px;
+}
+}
+
+
+
+@media (max-width: 850px) {
+
+/* ------------------------------------ */
+/* панель с информацией */
+.section_infoMain_main{
+  gap: 40px;
+}
+.section_infoMain_main_right_title{
+    font-size: 35px;
+    max-width: 270px;
+}
+
+.section_infoMain_main_right_title span{
+      font-size: 40px;
+}
+
+.section_infoMain_main_right_subtitle{
+  font-size: 12px;
+max-width: 300px;
+    margin-top: 30px;
+}
+
+.section_infoMain_main_img{
+  width: 350px;
+}
+
+.section_infoMain_main_img_Bean{
+top: 18px;
+width: 400px;
+left: -6px;
+}
+}
+
+
+@media (max-width: 700px) {
+ /* ------------------------------------ */
+/* панель с информацией */
+.section_infoMain_main{
+  gap: 30px;
+}
+.section_infoMain_main_right_title{
+    font-size: 30px;
+    max-width: 230px;
+}
+
+.section_infoMain_main_right_title span{
+      font-size: 35px;
+}
+
+.section_infoMain_main_right_subtitle{
+  font-size: 11px;
+max-width: 250px;
+    margin-top: 25px;
+}
+
+.section_infoMain_main_img{
+  width: 300px;
+}
+
+.section_infoMain_main_img_Bean{
+top: 15px;
+width: 350px;
+left: -8px;
+} 
+
+}
+
+@media (max-width: 500px) {
+   /* ------------------------------------ */
+/* панель с информацией */
+
+.section_infoMain_main{
+    align-items: center;
+    flex-direction: column;
+   text-align: center;
+}
+
+/* ------------------------------------ */
+.section_Type{
+  margin-top: 50px;
+}
+
+/* ------------------------------------ */
+
+}

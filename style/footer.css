@@ -1,0 +1,92 @@
+/* ------------------------------------ */
+
+/* Навигационная Панель для выбор фона  */
+
+.section_Type {
+  margin-top: 40px;
+  display: flex;
+}
+
+.section_Type_main {
+      display: flex;
+    gap: 40px;
+}
+
+.section_Type_main button img{
+      pointer-events: none;
+}
+
+
+.section_Type_main_TypeOne,
+.section_Type_main_TypeTwo,
+.section_Type_main_TypeThree {
+    background-color:transparent;
+        cursor: pointer;
+    border: 0;
+        transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background-position .3s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+
+.section_Type_main_TypeThree img {
+  width: 70px;
+}
+
+.section_Type_main_TypeOne img{
+width: 70px;
+}
+.section_Type_main_TypeOne:hover{
+   transform: translateY(-2px);
+}
+.section_Type_main_TypeTwo:hover{
+   transform: translateY(-2px);
+}
+.section_Type_main_TypeThree:hover{
+    transform: translateY(-2px);
+}
+
+
+.section_Type_main_TypeOne:active{
+      transform: translateY(0);
+}
+.section_Type_main_TypeTwo:active{
+      transform: translateY(0);
+}
+
+.section_Type_main_TypeTwo:active{
+    transform: translateY(0);
+}
+
+
+/* ------------------------------------ */
+
+/* Подвал Сайта */
+
+.footer {
+  background-color: #2F2A25;
+  margin-top: 30px;
+}
+
+.footer_main{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.footer_icon {
+      width: 82px;
+    height: auto;
+    user-select: none;
+}
+.footer_social {
+          gap: 20px;
+          display: flex;
+}
+
+/* ------------------------------------ */
+
+/* Адаптация  */
+

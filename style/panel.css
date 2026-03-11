@@ -1,0 +1,686 @@
+
+/* Выбор коффе */
+
+.section_Panel {
+      margin-top: 60px;
+    
+}
+
+.section_main {
+  position: relative;
+}
+
+/* ------------------------------------ */
+/* Выбор коффе или сладости */
+
+.section_choice {
+      display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.section_choice_coffe {
+  font-family: var(--third-family);
+font-weight: 400;
+font-size: 18px;
+color: #1f1f1f;
+background-color: transparent;
+border: 0;
+transition: color .2s ease;
+cursor: pointer;
+  transition: transform .2s ease, color .2s ease;
+}
+.section_choice_sweet {
+  font-family: var(--third-family);
+font-weight: 400;
+font-size: 18px;
+color: #1f1f1f;
+background-color: transparent;
+border: 0;
+transition: color .2s ease;
+cursor: pointer;
+  transition: transform .2s ease, color .2s ease;
+}
+
+.section_choice_coffe:hover,
+.section_choice_sweet:hover {
+  color: #237249;
+}
+
+/* ------------------------------------ */
+
+/* Выбор вида коффе */
+
+.section_coffe_choice_cards {
+    display: grid;
+    gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+  margin-top: 60px;
+}
+
+.section_coffe_choice_card{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+border-radius: 16px;
+width: 270px;
+height: 420px;
+box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.16);
+background: rgba(255, 255, 255, 0.35);
+padding: 10px;
+
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+
+.section_coffe_choice_card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.16);
+}
+
+.section_coffe_choice_card_img {
+    transition: transform .25s ease;
+}
+
+
+.section_coffe_choice_card:hover
+.section_coffe_choice_card_img{
+  transform: translateY(-4px);
+}
+
+.section_coffe_choice_card_title {
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 35px;
+color: #1f1f1f;
+}
+.section_coffe_choice_card_info {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+.section_coffe_choice_card_info_price {
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 25px;
+line-height: 163%;
+letter-spacing: -0.02em;
+color: #2f2a25;
+}
+
+.section_coffe_choice_card_info_price span{
+  background: linear-gradient(180deg, #237249 0%, #35c66b 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.section_coffe_choice_card_info_ml {
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 25px;
+line-height: 163%;
+letter-spacing: -0.02em;
+color: #2f2a25;
+}
+.section_coffe_choice_card_btn {
+  margin-top: 20px;
+  border-radius: 60px;
+width: 186px;
+height: 54px;
+background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+font-family: var(--font-family);
+font-weight: 639;
+font-size: 17px;
+line-height: 146%;
+cursor: pointer;
+letter-spacing: -0.02em;
+color: #fff;
+border: 0;
+}
+
+/* ------------------------------------ */
+/* Панель для добавления заказа в Корзину */
+
+.section_coffe_PanelAdd {
+border-radius: 24px;
+width: 524px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+height: 324px;
+background: #fff;
+padding: 10px 20px;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+      opacity: 0;
+  pointer-events: none;
+}
+
+.section_coffe_PanelAdd.active {
+  opacity: 1;
+  pointer-events: auto;
+    position: fixed; 
+    display: flex;
+    
+}
+
+
+
+.section_coffe_PanelAdd_close_btn{
+      display: flex;
+    justify-content: space-between;
+align-items: flex-start;
+}
+
+.section_coffe_PanelAdd_close_btn button{
+    border: 0;  
+        background-color: transparent;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.section_coffe_PanelAdd_title {
+  font-family: var(--second-family);
+font-weight: 600;
+font-size: 28px;
+line-height: 120%;
+color: #000;
+}
+.section_coffe_PanelAdd_info {
+      display: flex;
+          margin: 20px 0;
+    align-items: center;
+gap: 50px;
+}
+.section_coffe_PanelAdd_info_img {
+}
+.section_coffe_PanelAdd_info_img  img{
+  width: 141px;
+height: auto;
+}
+.section_coffe_PanelAdd_info_Title {
+}
+
+.section_coffe_PanelAdd_info_Title p {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 10px;
+line-height: 130%;
+color: #000;
+}
+.section_coffe_PanelAdd_info_volume{
+color: #b1b1b1;
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 10px;
+line-height: 130%;
+}
+
+.section_coffe_PanelAdd_info_Content{
+  font-family: var(--second-family);
+font-weight: 600;
+font-size: 10px;
+line-height: 130%;
+color: #000;
+}
+.section_coffe_PanelAdd_info_info {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 12px;
+  max-width: 250px;
+line-height: 130%;
+color: #000;
+}
+
+.section_coffe_PanelAdd_btns_add{
+border-radius: 83px;
+width: 200px;
+height: 40px;
+background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 100%;
+color: #fff;
+border: 0;  
+}
+.section_coffe_PanelAdd_btns {
+  display: flex;
+  align-items:center;
+      justify-content: space-between;
+}
+.section_coffe_PanelAdd_btn_duo{
+  display: flex;
+  gap: 25px;
+  align-items: center; 
+}
+
+
+.section_coffe_PanelAdd_Price{
+    display: flex;
+    
+}
+.section_coffe_PanelAdd_Price p {
+      font-family: var(--font-family);
+font-weight: 500;
+font-size: 17px;
+color: #2f2a25;
+}
+
+
+
+.section_coffe_PanelAdd_Price  span{
+background: linear-gradient(180deg, #237249 0%, #35c66b 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* ------------------------------------ */
+/* Панель для Адреса */
+
+.panelInfo_input {
+      border-radius: 24px;
+    width: 524px;
+    height: 324px;
+    background: #fff;
+    padding: 30px 20px;
+        display: none;
+    flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+            top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.panelInfo_input.active{
+  opacity: 1;
+pointer-events: auto;
+    position: fixed;
+        display: flex;
+}
+.panelInfo_input_main {
+  display: flex;
+    align-items: center;
+    position: relative;
+}
+.panelInfo_input_x {
+    border: 0;
+    background-color: transparent;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 1.5rem;
+margin-left: -5px;
+position: absolute;
+top: 0;
+left: 100%;
+}
+.panelInfo_input_info {
+  display: flex;
+    flex-direction: column;
+        gap: 20px;
+}
+
+.panelInfo_Input_left {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.panelInfo_Input_right img{
+width: 200px;
+    height: auto;
+    filter: blur(6px);
+    transform: scale(1.1);
+      user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.panelInfo_input_info_input{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 10px;
+line-height: 130%;
+color: #b1b1b1;
+border: 1px solid #f2f2f3;
+border-radius: 8px;
+width: 300px;
+height: 30px;
+outline: none; 
+}
+
+.panelInfo_input_info_input.panelInfo_input_info_input_Street{
+display: flex;
+}
+
+
+.panelInfo_input_info_CheckBoxs {
+  display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panelInfo_input_CheckBox_pickup input,
+.panelInfo_input_CheckBoxs_Order input {
+  display: none;
+}
+.panelInfo_input_CheckBox_pickup {
+      display: flex;
+      font-family: var(--second-family);
+font-weight: 400;
+font-size: 10px;
+color: #000;
+gap: 8px;
+}
+.panelInfo_input_CheckBoxs_Order {
+      display: flex;
+      font-family: var(--second-family);
+font-weight: 400;
+font-size: 10px;
+color: #000;
+gap: 8px;
+}
+.panelInfo_input_CheckBox_pickup input,
+.panelInfo_input_CheckBoxs_Order input {
+  position: relative;
+  opacity: 1;
+  width: 1px;
+  height: 1px;
+  cursor: pointer;
+}
+
+.panelInfo_input_CheckBox_pickup  p,
+.panelInfo_input_CheckBoxs_Order p {
+    display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+  position: relative;
+}
+
+
+.panelInfo_input_CheckBox_pickup p::before,
+.panelInfo_input_CheckBoxs_Order p::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+}
+.panelInfo_input_CheckBox_pickup input:checked + p::before,
+.panelInfo_input_CheckBoxs_Order input:checked + p::before {
+  background: #000;
+  border-color: #000;
+}
+
+.panelInfo_input_btn{
+  border-radius: 83px;
+width: 240px;
+height: 30px;
+background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+border: 0;  
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+color: #fff;
+}
+
+/* ------------------------------------ */
+
+
+@media (max-width: 500px) {
+.section_coffe_PanelAdd{
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items:center;
+    transform: none;
+    position: relative;
+    background: white;
+  border-radius: 0;
+  padding: 0;
+}
+
+.section_coffe_PanelAdd_close_btn button{
+      position: absolute;
+    top: 10px;
+    right: 10px;
+        font-size: 2.5rem;
+        
+}
+
+.section_coffe_PanelAdd_title.section_coffe_PanelAdd_titles  {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+}
+
+.section_coffe_PanelAdd_info {
+    gap: 10px;
+    flex-direction: column;
+}
+
+.section_coffe_PanelAdd_info_img img {
+    width: 430px;
+}
+
+.section_coffe_PanelAdd_info_Title p {
+    font-size: 15px;
+}
+
+
+
+.section_coffe_PanelAdd_btns {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+}
+
+.basket_card_right.section_coffe_PanelAdd_btn{
+    position: absolute;
+          top: -21px;
+        left: 6vh;
+        width: 105px;
+    height: 42px;
+    background: #f2f2f3;
+    border-radius: 12px;
+ 
+}
+
+
+.section_coffe_PanelAdd_btns_add{
+  margin-top: 40px;
+  border-radius: 83px;
+width: 400px;
+height: 40px;
+background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+font-family: var(--second-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 1;
+color: #fff;
+border: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.section_coffe_PanelAdd_Price  {
+   align-items:flex-end;
+           top: -21px;
+        left: 283px;
+        position: absolute;
+}
+
+.section_coffe_PanelAdd_Price p {
+    font-size: 30px;
+}
+
+.section_coffe_PanelAdd_Price span {
+    font-size: 32px;
+}
+
+.basket_card_right_count{
+  font-size: 16px;  
+}
+
+/* ------------------------------------ */
+
+.panelInfo_Input_left{
+  gap: 120px;
+}
+
+.panelInfo_input_x{
+    top: 10px;
+    right: 10px;
+  
+}
+.panelInfo_input {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+    position: relative;
+    background: white;
+    justify-content: center;
+  border-radius: 0;
+  padding: 0;
+}
+
+.panelInfo_Input_right img{
+      top: 0;
+      position: absolute;
+    left: 225px;
+    width: 500px;
+}
+
+.panelInfo_input_btn{
+    margin-top: 40px;
+  border-radius: 83px;
+width: 400px;
+height: 40px;
+background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+font-family: var(--second-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 1;
+color: #fff;
+border: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.panelInfo_input_info_input {
+
+    font-size: 15px;
+        width: 320px;
+    height: 40px;
+    padding: 0 12px;
+}
+
+.basket_panel{
+  top: 50%;
+  left: 20%;
+}
+
+.basket_panel.active{
+  position: fixed;
+}
+
+.section_coffe_choice_cards {
+  gap: 60px;
+}
+
+.section_Panel{
+  margin-top: 130px;
+}
+
+.section_infoMain{
+  margin-top: 130px;
+}
+}
+
+
+
+@media (max-width: 360px) {
+
+.panelInfo_input_info_CheckBoxs{
+  margin-left: 22px;
+}
+  .panelInfo_input_info_input{
+    margin-left: 20px;
+  }
+    .section_coffe_PanelAdd_close_btn button {
+        top: 8px;
+        left: 37vh;
+    }
+
+        .section_coffe_PanelAdd_btns_add {
+        width: 320px;
+      }
+
+      .panelInfo_input_info_input{
+  font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    color: #b1b1b1;
+    border: 1px solid #f2f2f3;
+    border-radius: 8px;
+    width: 250px;
+    height: 30px;
+    outline: none;
+}
+
+.panelInfo_input_btn{
+        width: 320px;
+        margin-top: 40px;
+}
+
+
+.section_coffe_choice_card_title{
+  font-size: 25px;
+}
+
+.section_coffe_PanelAdd_close_btn button{
+  font-size: 2rem;
+    top: 10px;
+    right: 10px;
+}
+
+.panelInfo_input_x{
+      top: 10px;
+    right: -10px;
+    left: auto;
+}
+}
+
+/* ------------------------------------ */

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/panel.css">
+  <link rel="stylesheet" href="style/info.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <title>FrzCoffe</title>
+</head>
+<body>
+  <main class="main">
+    <nav class="nav_menu" id="navMenu">
+<div class="container">
+<div class="nav_menu_main">
+  <img src="img/navicon.png" alt="Иконка Навигации" class="nav_icon">
+<nav class="nav_menu_menu">
+<a href="#navMenu" class="nav_menu_txt">Home</a>
+<a href="#infoMain" class="nav_menu_txt">Info</a>
+<a href="#panelMenu" class="nav_menu_txt">Menu</a>
+<a href="#footer" class="nav_menu_txt">contact</a>
+</nav>
+<div class="basket_menu">
+  <button class="basket" type="button">
+ <img src="img/VectorBasket.png" alt="Иконка Корзины">
+</button>
+<div class="basket_panel">
+  <div class="basket_count">
+    <p>Корзина</p>
+    <input type="number" class="count_basket_panel" value="0" readonly></input>
+  </div>
+  <div class="basket_cards">
+        <!-- <div class="basket_card">
+      <div class="basket_card_left">
+      <img src="img/blueberryСake.png" alt="Картинка Карточки в корзине">
+      <div class="basket_card_txt">
+        <p class="basket_card_title">Супер сырный</p>
+        <p class="basket_card_weight">330ml</p>
+        <div class="basket_card_price">5,40$</div>
+      </div>
+      </div>
+      <div class="basket_card_right">
+        <button class="basket_card_right_minus">-</button>
+<input type="number" class="basket_card_right_count" value="0" readonly>
+        <button class="basket_card_right_plus">+</button>
+      </div>
+    </div> -->
+  </div>
+  <div class="basket_panel_down">
+  <div class="basket_panel_price">
+    <p>Итого</p>
+    <div class="basket_panel_price_sum">0<span>$</span></div> 
+  </div>
+  <div class="basket_panel_btn">
+    <button>Добавить</button>
+  </div>
+  <div class="basket_panel_close">
+    <div class="basket_panel_FreeDelivery">
+      <img src="img/freeicondelivery.png" alt="Иконка Бесплатной Доставки">
+      <p>Бесплатная Доставка</p>
+    </div>
+    <button class="basket_panel_back">Свернуть</button>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<header class="header_info">
+  <div class="container">
+    <div class="header_info_main">
+      <div class="header_info_main_left">
+      <div class="headerInfo_main_txt">
+        <h1 class="headerInfo_main_txt_title">New Caffe by <span>frozif</span></h1>
+          <p class="headerInfo_main_txt_subtitle">Have time to buy the most harmonious drinks in the 
+new Starbucks coffee and don't forget about the discount!</p>
+      </div>
+      <div class="headerInfo_main_btns">
+        <button  class="headerInfo_main_btns_menu" type="button">View menu</button>
+        <button class="headerInfo_main_btns_more" type="button">More</button>
+      </div>
+      </div>
+      <div class="header_info_main_right">
+        <img class="header_info_main_right_img_Cup" src="img/greenСoffeeCup.png" alt="фото для Информации про кофе">
+        <img class="header_info_main_right_img_Bean" src="img/CoffeBean.png" alt="фото для Информации про кофе" srcset="">
+      </div>
+    </div>
+  </div>
+</header>
+<section class="section_Panel" id="panelMenu">
+  <div class="container">
+    <div class="section_main">
+      <div class="section_choice">
+        <button class="section_choice_coffe" type="button">Coffe</button>
+        <button class="section_choice_sweet" type="button">sweet</button>
+      </div>
+      <div class="section_coffe_choice">
+        <div class="section_coffe_choice_cards">
+      <div class="section_coffe_choice_card">
+  <img class="section_coffe_choice_card_img" src="img/greenCup.png" alt="Фото карточки Латте">
+  <h2 class="section_coffe_choice_card_title">latte</h2>
+<div class="section_coffe_choice_card_info">
+  <p class="section_coffe_choice_card_info_price">5.4<span>$</span></p>
+    <p class="section_coffe_choice_card_info_ml">300ml</p>
+</div>
+<button class="section_coffe_choice_card_btn" type="button">Buy Product</button>
+      </div>
+            <div class="section_coffe_choice_card">
+  <img class="section_coffe_choice_card_img" src="img/orangeCup.png" alt="Фото карточки Капучино">
+  <h2 class="section_coffe_choice_card_title">cappuccino</h2>
+<div class="section_coffe_choice_card_info">
+  <p class="section_coffe_choice_card_info_price">7.4<span>$</span></p>
+    <p class="section_coffe_choice_card_info_ml">300ml</p>
+</div>
+<button class="section_coffe_choice_card_btn" type="button">Buy Product</button>
+      </div>
+            <div class="section_coffe_choice_card">
+  <img class="section_coffe_choice_card_img" src="img/brownCup.png" alt="Фото карточки Фраппучино">
+  <h2 class="section_coffe_choice_card_title">Frappuccino</h2>
+<div class="section_coffe_choice_card_info">
+  <p class="section_coffe_choice_card_info_price">6.4<span>$</span></p>
+    <p class="section_coffe_choice_card_info_ml">300ml</p>
+</div>
+<button class="section_coffe_choice_card_btn" type="button">Buy Product</button>
+      </div>
+            <div class="section_coffe_choice_card">
+  <img class="section_coffe_choice_card_img" src="img/latte.png" alt="Фото карточки Большого Латте">
+  <h2 class="section_coffe_choice_card_title">latte</h2>
+<div class="section_coffe_choice_card_info">
+  <p class="section_coffe_choice_card_info_price">8.9<span>$</span></p>
+    <p class="section_coffe_choice_card_info_ml">400ml</p>
+</div>
+<button class="section_coffe_choice_card_btn" type="button">Buy Product</button>
+      </div>
+            <div class="section_coffe_choice_card">
+  <img class="section_coffe_choice_card_img" src="img/cappuccino.png" alt="Фото карточки  Большого Капучино">
+  <h2 class="section_coffe_choice_card_title">cappuccino</h2>
+<div class="section_coffe_choice_card_info">
+  <p class="section_coffe_choice_card_info_price">8.1<span>$</span></p>
+    <p class="section_coffe_choice_card_info_ml">400ml</p>
+</div>
+<button class="section_coffe_choice_card_btn" type="button">Buy Product</button>
+      </div>
+            <div class="section_coffe_choice_card">
+  <img class="section_coffe_choice_card_img" src="img/frappuccino.png" alt="Фото карточки Большого Фраппучино">
+  <h2 class="section_coffe_choice_card_title">Frappuccino</h2>
+<div class="section_coffe_choice_card_info">
+  <p class="section_coffe_choice_card_info_price">8.4<span>$</span></p>
+    <p class="section_coffe_choice_card_info_ml">400ml</p>
+</div>
+<button class="section_coffe_choice_card_btn" type="button">Buy Product</button>
+      </div>
+        </div>
+      </div>
+        <div class="section_coffe_PanelAdd">
+  <div class="section_coffe_PanelAdd_close_btn">
+                      <h2 class="section_coffe_PanelAdd_title section_coffe_PanelAdd_titles">Латте</h2>
+                    <button type="button">x</button>
+  </div>
+          <div class="section_coffe_PanelAdd_main">
+            <div class="section_coffe_PanelAdd_info">
+                <div class="section_coffe_PanelAdd_info_img">
+                  <img src="img/latteCup.png" alt="Снимок для Панели Добаления в Корзину">
+                </div>
+                <div class="section_coffe_PanelAdd_info_Title">
+                  <p class="section_coffe_PanelAdd_info_info">Латте это мягкий и нежный кофейный напиток, в котором насыщенный эспрессо гармонично соединяется с тёплым молоком и лёгкой воздушной пенкой.</p>
+                  <p class="section_coffe_PanelAdd_info_Content">Состав:</p>
+                  <p>Эспрессо</p>
+                  <p>Горячее молоко</p>
+                  <p>Молочная пенка</p>
+                  <span class="section_coffe_PanelAdd_info_volume">300ml, 150 ккал</span>
+                </div>
+            </div>
+            <div class="section_coffe_PanelAdd_btns">
+              <div class="section_coffe_PanelAdd_btn_duo">
+              <button class="section_coffe_PanelAdd_btns_add" type="button">Добавить</button>
+                    <div class="basket_card_right section_coffe_PanelAdd_btn">
+          <button class="basket_card_right_plus section_coffe_PanelAdd_minus">-</button>
+  <input type="number" class="basket_card_right_count section_coffe_PanelAdd_count" value="0" readonly>
+          <button class="basket_card_right_minus section_coffe_PanelAdd_plus">+</button>
+        </div>
+              </div>
+        <div class="section_coffe_PanelAdd_Price">
+          <p>5.4</p><span>$</span></div>
+            </div>
+          </div>
+        </div>
+      <div class="panelInfo_input">
+        <div class="panelInfo_input_main">
+        <button class="panelInfo_input_x">X</button>
+<div class="panelInfo_Input_left">
+            <div class="panelInfo_input_info">
+            <input class="panelInfo_input_info_input" type="text" placeholder="Ваше имя" required>
+            <input class="panelInfo_input_info_input" type="number" placeholder="Телефон" required>
+          </div>
+            <div class="panelInfo_input_info_CheckBoxs">
+            <div class="panelInfo_input_CheckBox_pickup">
+            <input type="checkbox">
+             <p>Самовывоз</p>
+            </div>
+            <div class="panelInfo_input_CheckBoxs_Order">
+            <input type="checkbox" checked>
+             <p>Доставка</p>
+            </div>
+          </div>
+          <input class="panelInfo_input_info_input panelInfo_input_info_input_Street" type="text" placeholder="Улица, дом, квартира" required>
+<button class="panelInfo_input_btn" type="button">Оформить</button>
+</div>
+<div class="panelInfo_Input_right">
+<img src="img/orderVector.png" draggable ="false" alt="Картинка Карточки Доставки">
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section_infoMain" id="infoMain"> 
+  <div class="container">
+    <div class="section_infoMain_main">
+      <div class="section_infoMain_main_left">
+        <img src="img/greenСoffeeCup.png" alt="фото для Информации про кофе" class="section_infoMain_main_img">
+        <img src="img/CoffeBean.png" alt="фото для Информации про кофе" class="section_infoMain_main_img_Bean">
+      </div>
+      <div class="section_infoMain_main_right">
+<h2 class="section_infoMain_main_right_title">Learn more about <span>Coffee</span></h2>
+<p class="section_infoMain_main_right_subtitle">Латте чаще покупают не ради кофе, а ради настроения 
+   Он ассоциируется с отдыхом и уютом  поэтому его заказывают даже тогда, когда не хочется крепкого напитка.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section_Type">
+  <div class="container">
+    <div class="section_Type_main">
+     <button class="section_Type_main_TypeOne" type="button"><img src="img/TypeOne.png" alt="Навигация для Латте" ></button> 
+     <button class="section_Type_main_TypeTwo" type="button"><img src="img/TypeTwo.png" alt="Навигация для Капучино" ></button>
+     <button class="section_Type_main_TypeThree" type="button"><img src="img/TypeThree.png" alt="Навигация для Фрапучинно" ></button> 
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer" id="footer">
+<div class="container">
+<div class="footer_main">
+        <img src="img/navicon.png" alt="Иконка Подвала" class="footer_icon">
+    <div class="footer_social">
+     <a href="https://www.instagram.com/"><img src="img/VectorInstagram.png" alt="Инстаграм"></a>
+     <a href="https://www.tiktok.com/"><img src="img/VectorTikTok.png" alt="ТикТок"></a>
+     <a href="https://www.facebook.com/?locale=ru_RU"><img src="img/VectorFaceBook.png" alt="Фейсбук"></a>
+    </div>
+</div>
+</div>
+  </footer>
+  <script src="ts/main.js"></script>
+</body>
+</html>
+
+
+
