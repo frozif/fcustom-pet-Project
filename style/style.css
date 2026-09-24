@@ -16,13 +16,12 @@ a{
 }
 body {
   margin: 0;
-  background-color: #CFC7BC;
+  /* background-color: #CFC7BC; */
   
 }
 
-html, body{
-    overflow-x: hidden;
-
+main{
+      background-color: #CFC7BC;
 }
 
 .container{
@@ -110,7 +109,7 @@ html, body{
     height: auto;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
     background: #fff;
-        display: flex;
+        display: none;
     flex-direction: column;
    padding: 16px 10px;
        position: absolute;
@@ -118,14 +117,16 @@ html, body{
     top: 100%;
     margin-top: 10px;
     z-index: 100;
-        opacity: 0;
     pointer-events: none;
+        transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 
 .basket_panel.active{
-        opacity: 1;
+       display: flex;
     pointer-events: auto;
+        transform: translateY(0);
 }
 
 .basket_panel_btn{
@@ -317,13 +318,13 @@ background-color: transparent;
   display: flex;
  gap: 90px;
   margin-top: 70px;
+  align-items: center;
+      justify-content: center;
 }
 .header_info_main_left {
     max-width: 550px;
 }
-.headerInfo_main_txt {
-       margin-top: 180px;
-}
+
 .headerInfo_main_txt_title {
   font-family: var(--font-family);
 font-weight: 800;
@@ -424,14 +425,16 @@ height: 74px;
 }
 
 .header_info_main_right_img_Cup{
+  width: 500px;
   position: relative;
   z-index: 1;
 }
 .header_info_main_right_img_Bean {
   position: absolute;
-    top: 186px;
-    left: 249px;
-    z-index: -1;
+    top: 100px;
+    left: 80px;
+    width: 400px;
+    z-index: 0;
     transform: rotate(-12deg);
 }
 
@@ -439,7 +442,7 @@ height: 74px;
 
 /* Адаптация  */
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
 .headerInfo_main_txt_title{
       font-size: 80px;
           margin: 0 0 42px;
@@ -461,6 +464,38 @@ height: 74px;
 width: 500px;
 }
 }
+
+
+
+
+@media (max-width: 1050px) {
+
+.header_info_main_right_img_Cup {
+width: 300;
+}
+
+.header_info_main_right_img_Bean{
+  display: none;
+}
+
+
+.header_info_main{
+  gap: 0;
+}
+}
+
+
+
+
+
+@media (max-width: 850px) {
+
+.header_info_main_right_img_Cup {
+  width: 250px;
+}
+
+}
+
 
 
 @media (max-width: 700px) {
@@ -499,6 +534,11 @@ width: 500px;
     height: 48px;
     font-size: 16px;
   }
+
+
+  .header_info_main_right_img_Cup {
+  width: 350px;
+}
 }
 
 
